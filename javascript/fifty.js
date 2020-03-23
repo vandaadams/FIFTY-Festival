@@ -10,3 +10,19 @@ function makeMarquee () {
 }
 
 makeMarquee()
+
+// selects all circles
+const circles = document.querySelectorAll('.circle')
+// iterates through circles
+circles.forEach(function(circle, index) {
+  circle.animate([
+    { transform: 'scale(1)' },
+    { transform: 'scale(1.2))' },
+    { transform: 'scale(1)' }
+  ], {
+    // animation delay
+    delay: 300 * index,
+    duration: 3000,
+    iterations: Infinity
+  });
+})

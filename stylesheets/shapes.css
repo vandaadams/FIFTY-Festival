@@ -2,7 +2,20 @@
   position: absolute;
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    }
+}
+
 .circle {
+ 	animation: pulsate 3s infinite;
   height: 93px;
   width: 93px;
   background-color: #FFEED1;
@@ -12,7 +25,7 @@
 .squiggle {
   width: 303px;
   height: 63px;
-  background-image: url(squiggle.svg);
+  background-image: url(../assets/images/squiggle.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -26,7 +26,7 @@ body {
 }
 
 .intro {
-  background-image: url(intro.jpg);
+  background-image: url(../assets/images/intro.jpg);
   color: #FFFFFF;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .day-3 {
-  background-image: url(day-3.jpg);
+  background-image: url(../assets/images/day-3.jpg);
 }
 
 .day {
