@@ -13,12 +13,25 @@ makeMarquee()
 
 // selects all circles
 const circles = document.querySelectorAll('.circle')
-// iterates through circles
-circles.forEach(function(circle, index) {
-  circle.animate([
-    { transform: 'scale(1)' },
-    { transform: 'scale(1.2))' },
-    { transform: 'scale(1)' }
+
+// iterates through array
+circles.forEach((circle, index) => {
+  // access to each circle element
+  circle.animate([{transform: 'scale(1)'}, {transform: 'scale(1.2)'}, {transform: 'scale(1)'}], {
+    // sets animation delay
+    delay: 300 * index,
+    duration: 3000,
+    iterations: Infinity
+  })
+})
+
+const squiggles = document.querySelectorAll('.squiggle')
+
+squiggles.forEach(function(squiggle, index) {
+  squiggle.animate([
+    { transform: 'rotate(0deg)' },
+    { transform: 'rotate(30deg)' },
+    { transform: 'rotate(0deg)' }
   ], {
     // animation delay
     delay: 300 * index,

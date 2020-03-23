@@ -96,7 +96,7 @@ body {
 
 .marquee span {
   /* animation will be repeating itself for an infinite amount of time */
-  animation:  moveLeft 200s infinite;
+  animation:  moveLeft 250s infinite;
   white-space: nowrap;
   display: block;
   position: relative;
@@ -122,6 +122,7 @@ body {
 .day {
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 .date {
