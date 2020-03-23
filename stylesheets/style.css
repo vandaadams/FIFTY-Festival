@@ -114,12 +114,13 @@ body {
   background-image: url(day-3.jpg);
 }
 
-.center {
+.day {
+  position: relative;
   text-align: center;
 }
 
 .date {
-  font-family: 'Lunchtype-Medium', sans-serif;
+  font-size: 21px;
   color: #FFEECF;
   margin-bottom: 48px;
   line-height: 1;
