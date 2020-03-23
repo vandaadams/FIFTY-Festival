@@ -101,3 +101,15 @@ body {
   /* mixes current layer's style with what's behind it */
   mix-blend-mode: difference;
 }
+
+.day-1 {
+  background-color: #FF74A7;
+}
+
+.day-2 {
+  background-color: #00B290;
+}
+
+.day-3 {
+  background-image: url(day-3.jpg);
+}
