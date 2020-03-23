@@ -78,11 +78,26 @@ body {
   font-size: 5vw;
   line-height: 1;
   overflow: hidden;
-  mix-blend-mode: difference;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3000vw);
+  }
 }
 
 .marquee span {
+  /* animation will be repeating itself for an infinite amount of time */
+  animation:  moveLeft 200s infinite;
   white-space: nowrap;
   display: block;
   position: relative;
+}
+
+.difference {
+  /* mixes current layer's style with what's behind it */
+  mix-blend-mode: difference;
 }
