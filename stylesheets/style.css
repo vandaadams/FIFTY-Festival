@@ -113,3 +113,28 @@ body {
 .day-3 {
   background-image: url(day-3.jpg);
 }
+
+.center {
+  text-align: center;
+}
+
+.date {
+  font-family: 'Lunchtype-Medium', sans-serif;
+  color: #FFEECF;
+  margin-bottom: 48px;
+  line-height: 1;
+}
+
+.lineup h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p {
+  font-size: 21px;
+}
+
+.lineup li {
+  margin-bottom: 21px;
+}
