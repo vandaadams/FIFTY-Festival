@@ -11,7 +11,12 @@ function makeMarquee () {
 
 makeMarquee()
 
-// selects all circles
+// creates random number
+function random(min, max){
+    return Math.floor(Math.random() * (max-min + 1)) + min;
+};
+
+// selects all circle elements
 const circles = document.querySelectorAll('.circle')
 
 // iterates through array
@@ -28,14 +33,17 @@ circles.forEach((circle, index) => {
 const squiggles = document.querySelectorAll('.squiggle')
 
 squiggles.forEach(function(squiggle, index) {
+  // creates random number between 0 and 45
+  const randomNumber = random(0, 45)
   squiggle.animate([
     { transform: 'rotate(0deg)' },
-    { transform: 'rotate(30deg)' },
+ 		// adds random number to rotate
+    { transform: 'rotate(' + randomNumber + 'deg)' },
     { transform: 'rotate(0deg)' }
   ], {
     // animation delay
     delay: 300 * index,
-    duration: 3000,
+    duration: 5000,
     iterations: Infinity
   });
 })
