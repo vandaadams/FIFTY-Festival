@@ -38,7 +38,7 @@ squiggles.forEach((squiggle, index) => {
   squiggle.animate([
     { transform: 'rotate(0deg)' },
  		// adds random number to rotate
-    { transform: 'rotate(' + randomNumber + 'deg)' },
+     { transform: `rotate(${randomNumber}deg)` },
     { transform: 'rotate(0deg)' }
   ], {
     // animation delay
