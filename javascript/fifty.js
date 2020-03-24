@@ -12,9 +12,9 @@ function makeMarquee () {
 makeMarquee()
 
 // creates random number
-function random(min, max){
+const random = (min, max) => {
     return Math.floor(Math.random() * (max-min + 1)) + min;
-};
+}
 
 // selects all circle elements
 const circles = document.querySelectorAll('.circle')
@@ -32,7 +32,7 @@ circles.forEach((circle, index) => {
 
 const squiggles = document.querySelectorAll('.squiggle')
 
-squiggles.forEach(function(squiggle, index) {
+squiggles.forEach((squiggle, index) => {
   // creates random number between 0 and 45
   const randomNumber = random(0, 45)
   squiggle.animate([
