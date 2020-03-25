@@ -80,3 +80,17 @@ sections.forEach((section, index) => {
     shape.style.transitionDelay = delay + 'ms'
   })
 })
+
+// scrolls into the page when arrows are clicked
+const scrollLinks = document.querySelectorAll('.js-scroll')
+
+scrollLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    // blocks the default browser behaviour of the link jumping to the href attribute
+    event.preventDefault()
+    const href = link.getAttribute('href')
+    document.querySelector(href).scrollIntoView({
+      behavior: 'smooth'
+    })
+  })
+})
