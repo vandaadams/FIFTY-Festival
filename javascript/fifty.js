@@ -62,3 +62,21 @@ inView('.section')
 
   // only adds the class once the user has scrolled 0.2 of the section of the viewport
   inView.threshold(0.2);
+
+  const sections = document.querySelectorAll('.section')
+
+sections.forEach((section, index) => {
+  const artists = section.querySelectorAll('.lineup li')
+  const shapes = section.querySelectorAll('.shape')
+
+  artists.forEach((artist, index) => {
+    const delay = index * 100
+    artist.style.transitionDelay = delay + 'ms'
+  })
+
+  shapes.forEach((shape, index) => {
+    // only starts when all the artist already faded in
+    const delay = (artists.length + index) * 100
+    shape.style.transitionDelay = delay + 'ms'
+  })
+})
